@@ -43,11 +43,10 @@ export default class Home extends Component<Props> {
         return (
             <View style={styles.navBarStyle}>
                 <Text>
-                    长沙
+                    杭州
                 </Text>
                 <TextInput
-                    placeholder="养生" style={styles.topInputStyle}></TextInput>
-
+                    placeholder="Base" style={styles.topInputStyle}/>
                 <View style={{flexDirection:'row'}}>
                     <Image source={require('../../res/images/icon_homepage_message.png')}  style={styles.navRightImg}/>
                     <Image source={require('../../res/images/icon_homepage_scan.png')} style={styles.navRightImg}/>
