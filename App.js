@@ -23,7 +23,7 @@ export default class App extends Component<Props> {
         console.log("2 render");
         return (
             <View style={styles.container}>
-                <View style={{justifyContent: 'center',flexDirection: 'row',alignItems:'flex-start'}}>
+                <View style={{justifyContent: 'center', flexDirection: 'row', alignItems: 'flex-start'}}>
                     <View style={{width: 50, height: 50, backgroundColor: 'red'}}/>
                     <View style={{width: 50, height: 50, backgroundColor: 'black'}}/>
                     <View style={{width: 50, height: 50, backgroundColor: 'green'}}/>
@@ -36,7 +36,7 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection:'row',
+        flexDirection: 'row',
         backgroundColor: '#F5FCFF',
     },
     welcome: {

@@ -5,5 +5,5 @@
 import {AppRegistry} from 'react-native';
 import Parent from './Parent'
 import {name as appName} from './app.json';
-
-AppRegistry.registerComponent(appName, () => Parent);
+import Main from './js/Main/main.js'
+AppRegistry.registerComponent(appName, () => Main);
