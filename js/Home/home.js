@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
         justifyContent:'space-around',
         position:'relative',
         top:-10
-
     },
     navRightImg:{
         width:30,

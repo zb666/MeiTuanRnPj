@@ -8,21 +8,82 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View,ScrollView,Image} from 'react-native';
 
 export default class More extends Component<Props> {
+
+
     render() {
         return (
-            <View>
-                <Text>
-                    More页面
-                </Text>
-            </View>
+           <View>
+                <ScrollView>
+                    <View style={{marginTop:10,fontSize: 40}}>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text >云音乐</Text>
+                        <Text>哈哈</Text>
+                        <Text>云音乐</Text>
+                        <Text>哈哈</Text>
+                    </View>
+                </ScrollView>
+           </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
+    navImageStyle:{
+        position:'absolute',
+        right:10,
+        width: Platform.OS === 'ios' ? 30 : 25,
+        height: Platform.OS === 'ios' ? 30 : 25
+    },
+    navViewStyle:{
+        backgroundColor:'rgba(255,96,0,1.0)',
+        height:50,
+        flexDirection:'row',
+        alignItems: 'center',
+        justifyContent:'center',
+    },
     welcome: {
         fontSize: 20,
         textAlign: 'center',

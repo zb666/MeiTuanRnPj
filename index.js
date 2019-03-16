@@ -32,7 +32,8 @@ class MeiTuan extends Component {
         return <Navigator
             initialRoute={{
                 name: "启动页",
-                component: Launcher
+                component: Launcher,
+                hh:"zb"
             }}
             renderScene={(router, navigator) => {
                 let Component = router.component;
