@@ -10,13 +10,12 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
-
 export default class Find extends Component<Props> {
     render() {
         return (
             <View>
                 <Text style={styles.welcome}>
-                    Find页面
+                    发现
                 </Text>
             </View>
         );

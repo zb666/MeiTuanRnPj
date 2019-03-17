@@ -53,16 +53,16 @@ export default class Main extends Component {
                 </TabNavigator.Item>
                 <TabNavigator.Item
                     title="发现"
-                    renderIcon={() => <Image source={require('../../res/images/icon_tabbar_merchant_normal.png')}
-                                             style={styles.iconStyle}/>}
-                    renderSelectedIcon={() => <Image
-                        source={require('../../res/images/icon_tabbar_merchant_selected.png')}
+                    renderIcon={() => <Image
+                        source={require('../../res/images/icon_tabbar_merchant_normal.png')}
                         style={styles.iconStyle}/>}
-                    selected={this.state.selectedTab === 'shop'}
-                    onPress={() => this.setState({8: 'shop'})}
-                >
+                    renderSelectedIcon={
+                        () => <Image
+                            source={require('../../res/images/icon_tabbar_merchant_selected.png')}
+                            style={styles.iconStyle}/>}
+                    selected={this.state.selectedTab === 'find'}
+                    onPress={() => this.setState({selectedTab: 'find'})}>
                     <Find/>
-
                 </TabNavigator.Item>
                 <TabNavigator.Item
                     title="订单"
@@ -71,8 +71,7 @@ export default class Main extends Component {
                     renderSelectedIcon={() => <Image source={require('../../res/images/icon_tabbar_mine_selected.png')}
                                                      style={styles.iconStyle}/>}
                     selected={this.state.selectedTab === 'mine'}
-                    onPress={() => this.setState({selectedTab: 'mine'})}
-                >
+                    onPress={() => this.setState({selectedTab: 'mine'})}>
                     <Mine/>
                 </TabNavigator.Item>
                 <TabNavigator.Item
@@ -96,7 +95,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
     },
     welcome: {
         fontSize: 20,

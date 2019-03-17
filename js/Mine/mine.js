@@ -16,7 +16,7 @@ export default class Mine extends Component<Props> {
         return (
             <View>
                 <Text style={styles.welcome}>
-                    Mine界面
+                    订单
                 </Text>
             </View>
         );

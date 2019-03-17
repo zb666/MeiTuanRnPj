@@ -27,7 +27,7 @@ export default class Launcher extends Component<Props> {
 
     render() {
         return (
-            <View>
+            <View style = {styles.container}>
                 <StatusBar
                     backgroundColor='rgba(0,0,0,0.0)'
                     hidden={true}
@@ -49,5 +49,9 @@ const styles = StyleSheet.create({
         resizeMode:'cover',
         //祛除内部元素的白色背景
         backgroundColor:'rgba(0,0,0,0)',
+    },
+    container:{
+        marginBottom:5
     }
+
 });

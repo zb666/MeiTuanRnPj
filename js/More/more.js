@@ -62,7 +62,6 @@ export default class More extends Component<Props> {
                         <Text >云音乐</Text>
                         <Text>哈哈</Text>
                         <Text>云音乐</Text>
-                        <Text>哈哈</Text>
                     </View>
                 </ScrollView>
            </View>
