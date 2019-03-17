@@ -8,8 +8,9 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View,TextInput,Image,StatusBar} from 'react-native';
+import {Platform, StyleSheet, Text, View,TextInput,Image,StatusBar,ScrollView} from 'react-native';
 import HomeDetail from './HomeDetail';
+import HomeTopView from "./HomeTopView";
 var Dimensions =require('Dimensions')
 var {width, height} = Dimensions.get('window');
 export default class Home extends Component<Props> {
@@ -31,6 +32,9 @@ export default class Home extends Component<Props> {
                     barStyle="light-content"
                 />
                 {this.renderNavBar()}
+                <ScrollView>
+                    <HomeTopView/>
+                </ScrollView>
                 <Text onPress={this._pressButton.bind(this)}>
                     {/*首页导航栏*/}
                     Main页面
