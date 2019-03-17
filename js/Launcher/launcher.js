@@ -25,6 +25,7 @@ export default class Launcher extends Component<Props> {
         },2000)
     }
 
+    //这里就是构造方法的接口
     render() {
         return (
             <View style = {styles.container}>

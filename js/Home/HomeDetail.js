@@ -26,7 +26,7 @@ export default class HomeDetail extends Component<Props> {
                 <Text style={styles.welcome}  onPress={this._pressButton.bind(this)}>
                     HomeDetail页面_点击返回
                 </Text>
-
+                
             </View>
         );
     }

@@ -15,6 +15,7 @@ import {Navigator} from "react-native-deprecated-custom-components"
  *     Object component
  *
  *     constuct(){
+ *     //这里就类似于构造方法 让子类去实现 这里的Navigator中的 initialRoute()就是抽象方法
  *         component= initialRoute()
  *
  *     }
