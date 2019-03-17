@@ -9,7 +9,6 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,TextInput,Image,StatusBar} from 'react-native';
-
 export default class MoreCommonItem extends Component<Props> {
 
     static defaultProps = {

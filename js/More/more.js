@@ -8,24 +8,25 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View,ScrollView,Image} from 'react-native';
+import {Platform, StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import MoreCommonItem from "./MoreCommonItem";
+import MoreMiddleCommonItem from './MoreMiddleCommonItem';
+
 export default class More extends Component<Props> {
     render() {
         return (
             <ScrollView
                 contentContainerStyle={styles.scrollViewStyle}
             >
-                <View style={{marginTop:20}}>
+                <View style={{marginTop: 30,marginBottom: 10}}>
                     <MoreCommonItem
                         leftIconName={require('../../res/images/collect.png')}
                         leftTitle='我的订单'
                         rightTitle='查看全部订单'
                     />
                 </View>
-
-
-                <View style={{marginTop:20}}>
+                <MoreMiddleCommonItem/>
+                <View style={{marginTop: 20}}>
                     <MoreCommonItem
                         leftIconName={require('../../res/images/draft.png')}
                         leftTitle='动脑学院钱包'
@@ -37,20 +38,20 @@ export default class More extends Component<Props> {
                         rightTitle='10张'
                     />
                 </View>
-                <View style={{marginTop:20}}>
+                <View style={{marginTop: 20}}>
                     <MoreCommonItem
                         leftIconName={require('../../res/images/card.png')}
                         leftTitle='积分商城'
                     />
                 </View>
-                <View style={{marginTop:20}}>
+                <View style={{marginTop: 20}}>
                     <MoreCommonItem
                         leftIconName={require('../../res/images/new_friend.png')}
                         leftTitle='今日推荐'
                         rightIconName={require('../../res/images/me_new.png')}
                     />
                 </View>
-                <View style={{marginTop:20}}>
+                <View style={{marginTop: 20}}>
                     <MoreCommonItem
                         leftIconName={require('../../res/images/card.png')}
                         leftTitle='我要合作'
@@ -63,8 +64,8 @@ export default class More extends Component<Props> {
 }
 
 const styles = StyleSheet.create({
-    scrollViewStyle:{
-        backgroundColor:'#e8e8e8',
+    scrollViewStyle: {
+        backgroundColor: '#e8e8e8',
     }
     ,
     welcome: {

@@ -22,7 +22,7 @@ export default class Launcher extends Component<Props> {
             this.props.navigator.replace({
                 component:Main
             })
-        },2000)
+        },1000)
     }
 
     //这里就是构造方法的接口

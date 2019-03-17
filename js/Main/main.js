@@ -70,7 +70,7 @@ export default class Main extends Component {
                 </TabNavigator.Item>
                 <TabNavigator.Item
 
-                    title="订单"
+                    title="更多"
                     renderIcon={() => <Image source={require('../../res/images/icon_tabbar_mine.png')} style={styles.iconStyle} />}
                     renderSelectedIcon={() => <Image source={require('../../res/images/icon_tabbar_mine_selected.png')} style={styles.iconStyle} />}
                     selected={this.state.selectedTab === 'mine'}
