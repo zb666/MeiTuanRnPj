@@ -61,12 +61,11 @@ export default class MineCommonItem extends Component<Props> {
 
 const styles = StyleSheet.create({
     navContail:{
-
         flexDirection:'row',
-        alignItems:'center',
+        alignItems:'center', //子元素内部的排列方式
         height:40,
         backgroundColor:'white',
-        justifyContent:'space-between',
+        justifyContent:'space-between', //对于子元素进行如何的约束
         borderBottomWidth:0.5,
         borderBottomColor:'#dddddd'
     },

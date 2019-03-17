@@ -11,13 +11,13 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import MoreCommonItem from "./MoreCommonItem";
 import MoreMiddleCommonItem from './MoreMiddleCommonItem';
-
+import MoreHead from './MoreHead';
 export default class More extends Component<Props> {
     render() {
         return (
             <ScrollView
-                contentContainerStyle={styles.scrollViewStyle}
-            >
+                contentContainerStyle={styles.scrollViewStyle}>
+                <MoreHead/>
                 <View style={{marginTop: 30,marginBottom: 10}}>
                     <MoreCommonItem
                         leftIconName={require('../../res/images/collect.png')}
